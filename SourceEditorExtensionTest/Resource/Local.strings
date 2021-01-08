@@ -1,0 +1,11 @@
+/* 
+  Local.strings
+  SourceEditorExtensionTest
+
+  Created by Anlesu on 2021/1/6.
+  
+*/
+"KNOW"   = "知道了";
+"CANCEL" = "取消";
+"DONE"   = "完成";
+"OK"     = "确定";

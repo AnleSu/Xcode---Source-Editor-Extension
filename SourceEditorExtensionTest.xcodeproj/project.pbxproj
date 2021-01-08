@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE61498C25A5A34300C5B40E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61498B25A5A34300C5B40E /* AppDelegate.m */; };
+		AE61498F25A5A34300C5B40E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61498E25A5A34300C5B40E /* ViewController.m */; };
+		AE61499125A5A34500C5B40E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE61499025A5A34500C5B40E /* Assets.xcassets */; };
+		AE61499425A5A34500C5B40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE61499225A5A34500C5B40E /* Main.storyboard */; };
+		AE61499725A5A34500C5B40E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61499625A5A34500C5B40E /* main.m */; };
+		AE6149AC25A5A3A400C5B40E /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6149AB25A5A3A400C5B40E /* SourceEditorExtension.m */; };
+		AE6149AF25A5A3A400C5B40E /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6149AE25A5A3A400C5B40E /* SourceEditorCommand.m */; };
+		AE6149B425A5A3A400C5B40E /* LocalTool.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE6149A325A5A3A300C5B40E /* LocalTool.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE6149BD25A5B73C00C5B40E /* XcodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6149BB25A5B73C00C5B40E /* XcodeHelper.m */; };
+		AE6149C225A5B9D300C5B40E /* Local.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE6149C125A5B9D300C5B40E /* Local.strings */; };
+		AE68754725A6E3720088649C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6149A525A5A3A300C5B40E /* Cocoa.framework */; };
+		AE68754825A6E37C0088649C /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6149A725A5A3A300C5B40E /* XcodeKit.framework */; };
+		AE68754925A6E37C0088649C /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE6149A725A5A3A300C5B40E /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE6149B225A5A3A400C5B40E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE61497F25A5A34300C5B40E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE6149A225A5A3A300C5B40E;
+			remoteInfo = LocalTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE6149B825A5A3A400C5B40E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE6149B425A5A3A400C5B40E /* LocalTool.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE68754A25A6E37C0088649C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE68754925A6E37C0088649C /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE61498725A5A34300C5B40E /* SourceEditorExtensionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceEditorExtensionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE61498A25A5A34300C5B40E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE61498B25A5A34300C5B40E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE61498D25A5A34300C5B40E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE61498E25A5A34300C5B40E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE61499025A5A34500C5B40E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE61499325A5A34500C5B40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE61499525A5A34500C5B40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE61499625A5A34500C5B40E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE61499825A5A34500C5B40E /* SourceEditorExtensionTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceEditorExtensionTest.entitlements; sourceTree = "<group>"; };
+		AE6149A325A5A3A300C5B40E /* LocalTool.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LocalTool.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6149A525A5A3A300C5B40E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AE6149A725A5A3A300C5B40E /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		AE6149AA25A5A3A400C5B40E /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		AE6149AB25A5A3A400C5B40E /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		AE6149AD25A5A3A400C5B40E /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		AE6149AE25A5A3A400C5B40E /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		AE6149B025A5A3A400C5B40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE6149B125A5A3A400C5B40E /* LocalTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalTool.entitlements; sourceTree = "<group>"; };
+		AE6149BB25A5B73C00C5B40E /* XcodeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeHelper.m; sourceTree = "<group>"; };
+		AE6149BC25A5B73C00C5B40E /* XcodeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeHelper.h; sourceTree = "<group>"; };
+		AE6149C125A5B9D300C5B40E /* Local.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Local.strings; sourceTree = "<group>"; };
+		AE614AAA25A6BD5300C5B40E /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE61498425A5A34300C5B40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6149A025A5A3A300C5B40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE68754725A6E3720088649C /* Cocoa.framework in Frameworks */,
+				AE68754825A6E37C0088649C /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE61497E25A5A34300C5B40E = {
+			isa = PBXGroup;
+			children = (
+				AE61498925A5A34300C5B40E /* SourceEditorExtensionTest */,
+				AE6149A925A5A3A400C5B40E /* LocalTool */,
+				AE6149A425A5A3A300C5B40E /* Frameworks */,
+				AE61498825A5A34300C5B40E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE61498825A5A34300C5B40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE61498725A5A34300C5B40E /* SourceEditorExtensionTest.app */,
+				AE6149A325A5A3A300C5B40E /* LocalTool.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE61498925A5A34300C5B40E /* SourceEditorExtensionTest */ = {
+			isa = PBXGroup;
+			children = (
+				AE6149C025A5B9BA00C5B40E /* Resource */,
+				AE61498A25A5A34300C5B40E /* AppDelegate.h */,
+				AE61498B25A5A34300C5B40E /* AppDelegate.m */,
+				AE61498D25A5A34300C5B40E /* ViewController.h */,
+				AE61498E25A5A34300C5B40E /* ViewController.m */,
+				AE61499025A5A34500C5B40E /* Assets.xcassets */,
+				AE61499225A5A34500C5B40E /* Main.storyboard */,
+				AE61499525A5A34500C5B40E /* Info.plist */,
+				AE61499625A5A34500C5B40E /* main.m */,
+				AE61499825A5A34500C5B40E /* SourceEditorExtensionTest.entitlements */,
+			);
+			path = SourceEditorExtensionTest;
+			sourceTree = "<group>";
+		};
+		AE6149A425A5A3A300C5B40E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE6149A525A5A3A300C5B40E /* Cocoa.framework */,
+				AE6149A725A5A3A300C5B40E /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE6149A925A5A3A400C5B40E /* LocalTool */ = {
+			isa = PBXGroup;
+			children = (
+				AE614AAA25A6BD5300C5B40E /* Xcode.h */,
+				AE6149BC25A5B73C00C5B40E /* XcodeHelper.h */,
+				AE6149BB25A5B73C00C5B40E /* XcodeHelper.m */,
+				AE6149AA25A5A3A400C5B40E /* SourceEditorExtension.h */,
+				AE6149AB25A5A3A400C5B40E /* SourceEditorExtension.m */,
+				AE6149AD25A5A3A400C5B40E /* SourceEditorCommand.h */,
+				AE6149AE25A5A3A400C5B40E /* SourceEditorCommand.m */,
+				AE6149B025A5A3A400C5B40E /* Info.plist */,
+				AE6149B125A5A3A400C5B40E /* LocalTool.entitlements */,
+			);
+			path = LocalTool;
+			sourceTree = "<group>";
+		};
+		AE6149C025A5B9BA00C5B40E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AE6149C125A5B9D300C5B40E /* Local.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE61498625A5A34300C5B40E /* SourceEditorExtensionTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE61499B25A5A34500C5B40E /* Build configuration list for PBXNativeTarget "SourceEditorExtensionTest" */;
+			buildPhases = (
+				AE61498325A5A34300C5B40E /* Sources */,
+				AE61498425A5A34300C5B40E /* Frameworks */,
+				AE61498525A5A34300C5B40E /* Resources */,
+				AE6149B825A5A3A400C5B40E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE6149B325A5A3A400C5B40E /* PBXTargetDependency */,
+			);
+			name = SourceEditorExtensionTest;
+			productName = SourceEditorExtensionTest;
+			productReference = AE61498725A5A34300C5B40E /* SourceEditorExtensionTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE6149A225A5A3A300C5B40E /* LocalTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE6149B525A5A3A400C5B40E /* Build configuration list for PBXNativeTarget "LocalTool" */;
+			buildPhases = (
+				AE61499F25A5A3A300C5B40E /* Sources */,
+				AE6149A025A5A3A300C5B40E /* Frameworks */,
+				AE6149A125A5A3A300C5B40E /* Resources */,
+				AE68754A25A6E37C0088649C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalTool;
+			productName = LocalTool;
+			productReference = AE6149A325A5A3A300C5B40E /* LocalTool.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE61497F25A5A34300C5B40E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AE61498625A5A34300C5B40E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AE6149A225A5A3A300C5B40E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = AE61498225A5A34300C5B40E /* Build configuration list for PBXProject "SourceEditorExtensionTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE61497E25A5A34300C5B40E;
+			productRefGroup = AE61498825A5A34300C5B40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE61498625A5A34300C5B40E /* SourceEditorExtensionTest */,
+				AE6149A225A5A3A300C5B40E /* LocalTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE61498525A5A34300C5B40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE61499125A5A34500C5B40E /* Assets.xcassets in Resources */,
+				AE61499425A5A34500C5B40E /* Main.storyboard in Resources */,
+				AE6149C225A5B9D300C5B40E /* Local.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE6149A125A5A3A300C5B40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE61498325A5A34300C5B40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE61498F25A5A34300C5B40E /* ViewController.m in Sources */,
+				AE61499725A5A34500C5B40E /* main.m in Sources */,
+				AE61498C25A5A34300C5B40E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE61499F25A5A3A300C5B40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE6149AC25A5A3A400C5B40E /* SourceEditorExtension.m in Sources */,
+				AE6149BD25A5B73C00C5B40E /* XcodeHelper.m in Sources */,
+				AE6149AF25A5A3A400C5B40E /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE6149B325A5A3A400C5B40E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE6149A225A5A3A300C5B40E /* LocalTool */;
+			targetProxy = AE6149B225A5A3A400C5B40E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE61499225A5A34500C5B40E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE61499325A5A34500C5B40E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE61499925A5A34500C5B40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE61499A25A5A34500C5B40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE61499C25A5A34500C5B40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SourceEditorExtensionTest/SourceEditorExtensionTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SourceEditorExtensionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.SourceEditorExtensionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		AE61499D25A5A34500C5B40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SourceEditorExtensionTest/SourceEditorExtensionTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SourceEditorExtensionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.SourceEditorExtensionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		AE6149B625A5A3A400C5B40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LocalTool/LocalTool.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LocalTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.SourceEditorExtensionTest.LocalTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE6149B725A5A3A400C5B40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LocalTool/LocalTool.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LocalTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.SourceEditorExtensionTest.LocalTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE61498225A5A34300C5B40E /* Build configuration list for PBXProject "SourceEditorExtensionTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE61499925A5A34500C5B40E /* Debug */,
+				AE61499A25A5A34500C5B40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE61499B25A5A34500C5B40E /* Build configuration list for PBXNativeTarget "SourceEditorExtensionTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE61499C25A5A34500C5B40E /* Debug */,
+				AE61499D25A5A34500C5B40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE6149B525A5A3A400C5B40E /* Build configuration list for PBXNativeTarget "LocalTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6149B625A5A3A400C5B40E /* Debug */,
+				AE6149B725A5A3A400C5B40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE61497F25A5A34300C5B40E /* Project object */;
+}
